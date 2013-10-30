@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 " My Bundles
 Bundle 'tpope/vim-sensible'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'ervandew/supertab'
 
 " Basic {1
@@ -26,6 +27,8 @@ colorscheme desert
 " Key map {1
 let mapleader=','
 map <leader>q :q<cr>
+map <leader>e :bd<cr>
+map <tab> :bn<cr>
 map <space> za
 nmap <c-\> :w<cr>
 imap <c-\> <Esc><c-\>
@@ -53,6 +56,9 @@ au Filetype python,vim set ts=4 sts=4 sw=4 expandtab
  "use tab, tab = 2 space
 au Filetype html set ts=2 sts=2 sw=2 noexpandtab
  "no use tab, tab = 2 space
-au Filetype css,stylus,yaml,cofee,js,less,jade set ts=2 sts=2 sw=2 expandtab
+au Filetype css,stylus,yaml,coffee,js,less,jade set ts=2 sts=2 sw=2 expandtab
+
+" Indent {1
+au Filetype python,coffee,jade,stylus set fdm=indent
 
 " vim:ft=vim:fdm=marker:fmr={,}

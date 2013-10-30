@@ -25,9 +25,10 @@ colorscheme desert
 
 " Key map {1
 let mapleader=','
-map <leader>w :w<cr>
 map <leader>q :q<cr>
 map <space> za
+nmap <c-\> :w<cr>
+imap <c-\> <Esc><c-\>
 set pastetoggle=<F2>
 
 " Status line {1

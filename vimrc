@@ -12,6 +12,7 @@ Bundle 'tpope/vim-sensible'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'ervandew/supertab'
+Bundle 'scrooloose/syntastic'
 
 " Basic {1
 set noswapfile
@@ -28,6 +29,7 @@ colorscheme desert
 let mapleader=','
 map <leader>q :q<cr>
 map <leader>e :bd<cr>
+map <leader>t :!python -m doctest %<cr>
 map <tab> :bn<cr>
 map <space> za
 nmap <c-\> :w<cr>

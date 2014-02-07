@@ -13,6 +13,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/syntastic'
+Bundle 'altercation/vim-colors-solarized.git'
 
 " Basic {1
 set noswapfile
@@ -23,12 +24,15 @@ set cursorline
 set fillchars=fold:\ 
 filetype indent on
 filetype plugin on
-colorscheme desert
+set background=dark
+let g:solarized_underline=0
+colorscheme solarized
 
 " Key map {1
 let mapleader=','
 map <leader>q :q<cr>
 map <leader>e :bd<cr>
+map <leader>l :nohlsearch<cr>
 map <leader>t :!python -m doctest %<cr>
 map <tab> :bn<cr>
 map <space> za

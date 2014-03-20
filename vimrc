@@ -14,6 +14,9 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/syntastic'
 Bundle 'altercation/vim-colors-solarized.git'
+Bundle 'Glench/Vim-Jinja2-Syntax'
+Bundle 'SirVer/ultisnips'
+Bundle 'honza/vim-snippets'
 
 " Basic {1
 set noswapfile
@@ -27,6 +30,8 @@ filetype plugin on
 set background=dark
 let g:solarized_underline=0
 colorscheme solarized
+let g:syntastic_html_checkers = []
+let NERDTreeIgnore=['.pyc$[[file]]', '\~$']
 
 " Key map {1
 let mapleader=','
@@ -60,9 +65,9 @@ map <leader>n :NERDTreeToggle<cr>
  "no use tab, tab = 4 space
 au Filetype python,vim set ts=4 sts=4 sw=4 expandtab
  "use tab, tab = 2 space
-au Filetype html set ts=2 sts=2 sw=2 noexpandtab
+au Filetype html,jinja set ts=2 sts=2 sw=2 noexpandtab
  "no use tab, tab = 2 space
-au Filetype css,stylus,yaml,coffee,js,less,jade set ts=2 sts=2 sw=2 expandtab
+au Filetype javascript,css,stylus,yaml,coffee,js,less,jade set ts=2 sts=2 sw=2 expandtab
 
 " Indent {1
 au Filetype python,coffee,jade,stylus set fdm=indent

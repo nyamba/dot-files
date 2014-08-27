@@ -3,20 +3,25 @@
 " Vundle {1
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 " My Bundles
-Bundle 'tpope/vim-sensible'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'ervandew/supertab'
-Bundle 'scrooloose/syntastic'
-Bundle 'altercation/vim-colors-solarized.git'
-Bundle 'Glench/Vim-Jinja2-Syntax'
-Bundle 'SirVer/ultisnips'
-Bundle 'honza/vim-snippets'
+Plugin 'tpope/vim-sensible'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
+Plugin 'altercation/vim-colors-solarized.git'
+Plugin 'Glench/Vim-Jinja2-Syntax'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
+" All Plugin must be added before the following line
+call vundle#end()
+filetype plugin indent on
+
 
 " Basic {1
 set noswapfile
